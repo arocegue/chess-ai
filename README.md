@@ -25,4 +25,5 @@ We may use the open-source datasets of chess evaluations and games from Lichess 
 We will be planning to use the following open-source libraries:
   - python-chess: An open-source Python chess library that will handle all of the chess game logic such as board representation, legal move generation, and chess rules. This will allow us to primarily focus on the chess AI aspect.
   - Stockfish: An open-source chess engine that will be used only as a benchmark for comparison with our AI.
+
 The Mini-max algorithm, Alpha-beta pruning implementation, heuristic evaluation function, and performance analysis will be implemented by our group.
