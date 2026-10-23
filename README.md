@@ -27,3 +27,156 @@ We will be planning to use the following open-source libraries:
   - Stockfish: An open-source chess engine that will be used only as a benchmark for comparison with our AI.
 
 The Mini-max algorithm, Alpha-beta pruning implementation, heuristic evaluation function, and performance analysis will be implemented by our group.
+
+# Project Setup Guide
+
+This project uses Python virtual environments and `pip` with a `requirements.txt` file to manage dependencies.
+
+Each team member should create their own local virtual environment. Do **not** commit the `.venv` folder to GitHub.
+
+---
+
+## Prerequisites
+
+Make sure Python 3 is installed on your computer. Pref >=3.14
+
+You can check your Python version with:
+
+```bash
+python --version
+```
+
+If that does not work on macOS, try:
+
+```bash
+python3 --version
+```
+
+---
+
+# Windows Setup
+
+## 1. Clone the repository
+
+
+```bash
+git clone https://github.com/arocegue/chess-ai.git
+cd chess-ai
+```
+
+## 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+This creates a local `.venv` folder containing an isolated Python environment for the project.
+
+## 3. Activate the virtual environment
+
+### PowerShell
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### Command Prompt
+
+```cmd
+.venv\Scripts\activate
+```
+
+### Bash
+
+```bash
+source .venv/Scripts/activate
+```
+
+After activation, your terminal should show something similar to:
+
+```text
+(.venv)
+```
+
+## 4. Install project dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+## 5. Run the application
+
+```bash
+python app.py
+```
+
+
+If the Flask server starts successfully, open the address shown in the terminal, typically:
+
+```text
+http://127.0.0.1:5000
+```
+
+## 6. Deactivate the virtual environment when finished
+
+```bash
+deactivate
+```
+
+---
+
+# macOS Setup
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/arocegue/chess-ai.git
+cd chess-ai
+```
+
+
+## 2. Create a virtual environment
+
+```bash
+python3 -m venv .venv
+```
+
+## 3. Activate the virtual environment
+
+```bash
+source .venv/bin/activate
+```
+
+After activation, your terminal should show something similar to:
+
+```text
+(.venv)
+```
+
+## 4. Install project dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+## 5. Run the application
+
+```bash
+python app.py
+```
+
+If the Flask server starts successfully, open the address shown in the terminal, typically:
+
+```text
+http://127.0.0.1:5000
+```
+
+## 6. Deactivate the virtual environment when finished
+
+```bash
+deactivate
+```
+
+---
